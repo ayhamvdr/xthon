@@ -89,7 +89,7 @@ zed_temp = """{ALIVE_TEXT}
 **{Z_EMOJI} وقت التشغيل :** `{uptime}`
 **{Z_EMOJI} تاريـخ التنصيب :** `{zedda}`
 **{Z_EMOJI} المسـتخـدم:** {mention}
-**{Z_EMOJI} قنـاة السـورس :** [اضغـط هنـا](https://t.me/ZThon)"""
+**{Z_EMOJI} قنـاة السـورس :** [اضغـط هنـا](https://t.me/mixthon)"""
 
 
 @zedub.zed_cmd(
