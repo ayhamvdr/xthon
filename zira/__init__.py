@@ -14,18 +14,18 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.1.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "ZThon <https://github.com/Zed-Thon/ZelZal>"
-__copyright__ = f"ZThon Copyright (C) 2021 - 2022  {__author__}"
+__author__ = "mixhon <https://github.com/coderiraq1/mixthon>"
+__copyright__ = f"mixhon Copyright (C) 2021 - 2022  {__author__}"
 
 zedub.version = __version__
-LOGS = logging.getLogger("زدثــون")
+LOGS = logging.getLogger("ميكسثون")
 bot = zedub
 
 StartTime = time.time()
 zedversion = "3.1.1"
 
-if Config.UPSTREAM_REPO == "zel":
-    UPSTREAM_REPO_URL = "https://github.com/Zed-Thon/Zelzal"
+if Config.UPSTREAM_REPO == "mix":
+    UPSTREAM_REPO_URL = "https://github.com/coderiraq1/mixthon"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
