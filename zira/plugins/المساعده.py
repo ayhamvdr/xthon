@@ -73,7 +73,7 @@ async def zed_handler(event):
     query = event.text
     await zedub.get_me()
     if query.startswith("الاوامر") and event.query.user_id == zedub.uid:
-        buttons = [[Button.inline("1", data="ahmed1"), Button.inline("❷", data="ahmed2"), Button.inline("❸", data="ahmed3"), Button.inline("❹", data="ahmed4"),],[Button.inline("❺", data="ahmed5"), Button.inline("❻", data="ahmed6"), Button.inline("❼", data="ahmed7"), Button.inline("❽", data="ahmed8"),],[Button.inline("❾", data="ahmed9"), Button.inline("❿", data="ahmad10"), Button.inline("⓫", data="ahmad11"),],[Button.inline("⓬", data="ahmad12"), Button.inline("⓭", data="ahmad13"), Button.inline("⓮", data="ahmad14"), Button.inline("⓯", data="ahmad15"),],[Button.inline("⓰", data="ahmad16"), Button.inline("⓱", data="ahmad17"),],[Button.inline("⓲", data="ahmad18"), Button.inline("⓳", data="ahmad19"), Button.inline("⓴", data="ahmadd20"),]]
+        buttons = [[Button.inline("1", data="Obaida1"), Button.inline("❷", data="Obaida2"), Button.inline("❸", data="Obaida3"), Button.inline("❹", data="Obaida4"),],[Button.inline("❺", data="Obaida5"), Button.inline("❻", data="Obaida6"), Button.inline("❼", data="Obaida7"), Button.inline("❽", data="Obaida8"),],[Button.inline("❾", data="Obaida9"), Button.inline("❿", data="ahmad10"), Button.inline("⓫", data="ahmad11"),],[Button.inline("⓬", data="ahmad12"), Button.inline("⓭", data="ahmad13"), Button.inline("⓮", data="ahmad14"), Button.inline("⓯", data="ahmad15"),],[Button.inline("⓰", data="ahmad16"), Button.inline("⓱", data="ahmad17"),],[Button.inline("⓲", data="ahmad18"), Button.inline("⓳", data="ahmad19"), Button.inline("⓴", data="ahmadd20"),]]
         result = builder.article(title="zedub",text=Malath,buttons=buttons,link_preview=False)
         await event.answer([result] if result else None)
 @zedub.zed_cmd(pattern="الاوامر(?: |$)(.*)")
@@ -172,10 +172,10 @@ async def zed(event):
 @zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
-    buttons = [[Button.inline("❶", data="ahmed1"), Button.inline("❷", data="ahmed2"), Button.inline("❸", data="ahmed3"), Button.inline("❹", data="ahmed4"),],[Button.inline("❺", data="ahmed5"), Button.inline("❻", data="ahmed6"), Button.inline("❼", data="ahmed7"), Button.inline("❽", data="ahmed8"),],[Button.inline("❾", data="ahmed9"), Button.inline("❿", data="ahmad10"), Button.inline("⓫", data="ahmad11"),],[Button.inline("⓬", data="ahmad12"), Button.inline("⓭", data="ahmad13"), Button.inline("⓮", data="ahmad14"), Button.inline("⓯", data="ahmad15"),],[Button.inline("⓰", data="ahmad16"), Button.inline("⓱", data="ahmad17"),],[Button.inline("⓲", data="ahmad18"), Button.inline("⓳", data="ahmad19"), Button.inline("⓴", data="ahmadd20"),]]
+    buttons = [[Button.inline("❶", data="Obaida1"), Button.inline("❷", data="Obaida2"), Button.inline("❸", data="Obaida3"), Button.inline("❹", data="Obaida4"),],[Button.inline("❺", data="Obaida5"), Button.inline("❻", data="Obaida6"), Button.inline("❼", data="Obaida7"), Button.inline("❽", data="Obaida8"),],[Button.inline("❾", data="Obaida9"), Button.inline("❿", data="ahmad10"), Button.inline("⓫", data="ahmad11"),],[Button.inline("⓬", data="ahmad12"), Button.inline("⓭", data="ahmad13"), Button.inline("⓮", data="ahmad14"), Button.inline("⓯", data="ahmad15"),],[Button.inline("⓰", data="ahmad16"), Button.inline("⓱", data="ahmad17"),],[Button.inline("⓲", data="ahmad18"), Button.inline("⓳", data="ahmad19"), Button.inline("⓴", data="ahmadd20"),]]
     await event.edit(Malath, buttons=buttons)
 
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed1")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida1")))
 @check_owner
 async def zed_handler(event):
     zelzal = "⤶ عـذراً عـزيـزي 🤷🏻‍♀\n⤶ هـذه اللوحه لا تشتغل في الخاص\n⤶ لـ إظهـار لوحـة الاوامـر هنـا 👇\n\n⤶ ارســل (.اوامري)"
@@ -185,7 +185,7 @@ async def zed_handler(event):
         await event.edit(orden1, buttons=buttons, link_preview=False)
     except Exception:
         await event.answer(zelzal, cache_time=0, alert=True)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed2")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida2")))
 @check_owner
 async def zed_handler(event):
     zelzal = "⤶ عـذراً عـزيـزي 🤷🏻‍♀\n⤶ هـذه اللوحه لا تشتغل في الخاص\n⤶ لـ إظهـار لوحـة الاوامـر هنـا 👇\n\n⤶ ارســل (.اوامري)"
@@ -195,7 +195,7 @@ async def zed_handler(event):
         await event.edit(text, buttons=zilzal, link_preview=False)
     except Exception:
         await event.answer(zelzal, cache_time=0, alert=True)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed3")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida3")))
 @check_owner
 async def zed_handler(event):
     zelzal = "⤶ عـذراً عـزيـزي 🤷🏻‍♀\n⤶ هـذه اللوحه لا تشتغل في الخاص\n⤶ لـ إظهـار لوحـة الاوامـر هنـا 👇\n\n⤶ ارســل (.اوامري)"
@@ -205,7 +205,7 @@ async def zed_handler(event):
         await event.edit(text, buttons=zilzal, link_preview=False)
     except Exception:
         await event.answer(zelzal, cache_time=0, alert=True)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed4")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida4")))
 @check_owner
 async def zed_handler(event):
     zelzal = "⤶ عـذراً عـزيـزي 🤷🏻‍♀\n⤶ هـذه اللوحه لا تشتغل في الخاص\n⤶ لـ إظهـار لوحـة الاوامـر هنـا 👇\n\n⤶ ارســل (.اوامري)"
@@ -215,7 +215,7 @@ async def zed_handler(event):
         await event.edit(text, buttons=zilzal, link_preview=False)
     except Exception:
         await event.answer(zelzal, cache_time=0, alert=True)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed5")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida5")))
 @check_owner
 async def zed_handler(event):
     zelzal = "⤶ عـذراً عـزيـزي 🤷🏻‍♀\n⤶ هـذه اللوحه لا تشتغل في الخاص\n⤶ لـ إظهـار لوحـة الاوامـر هنـا 👇\n\n⤶ ارســل (.اوامري)"
@@ -225,7 +225,7 @@ async def zed_handler(event):
         await event.edit(text, buttons=zilzal, link_preview=False)
     except Exception:
         await event.answer(zelzal, cache_time=0, alert=True)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed6")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida6")))
 @check_owner
 async def zed_handler(event):
     zelzal = "⤶ عـذراً عـزيـزي 🤷🏻‍♀\n⤶ هـذه اللوحه لا تشتغل في الخاص\n⤶ لـ إظهـار لوحـة الاوامـر هنـا 👇\n\n⤶ ارســل (.اوامري)"
@@ -235,7 +235,7 @@ async def zed_handler(event):
         await event.edit(text, buttons=zilzal, link_preview=False)
     except Exception:
         await event.answer(zelzal, cache_time=0, alert=True)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed7")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida7")))
 @check_owner
 async def zed_handler(event):
     zelzal = "⤶ عـذراً عـزيـزي 🤷🏻‍♀\n⤶ هـذه اللوحه لا تشتغل في الخاص\n⤶ لـ إظهـار لوحـة الاوامـر هنـا 👇\n\n⤶ ارســل (.اوامري)"
@@ -245,13 +245,13 @@ async def zed_handler(event):
         await event.edit(text, buttons=zilzal, link_preview=False)
     except Exception:
         await event.answer(zelzal, cache_time=0, alert=True)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed8")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida8")))
 @check_owner
 async def zed_handler(zedub):
     text = "[ᯓ 𝗠𝗶𝗫𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اوامــر الـفــارات 🎛](t.me/mixthon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎قائـمه اوامر تغييـر فـارات الصـور بأمـر واحـد فقـط - لـ اول مـره ع سـورس تليثـون يوزر بـوت 🦾 :** \n\n⪼ `.اضف صورة الحماية` بالـرد ع صـورة او ميديـا\n\n⪼ `.اضف صورة الفحص` بالـرد ع صـورة او ميديـا\n⪼ قنـاة كلايـش الفحـص @zzclll\n\n⪼ `.اضف صورة الوقتي` بالـرد ع صـورة او ميديـا\n\n⪼ `.اضف صورة الاوامر` بالـرد ع صـورة او ميديـا\n\n⪼ `.اضف صورة السورس` بالـرد ع صـورة او ميديـا\n\n⪼ `.اضف صورة الكتم` بالـرد ع صـورة او ميديـا\n\n⪼ `.اضف صورة البوت` بالـرد ع صـورة او ميديـا لـ اضـافة صـورة ستـارت للبـوت\n\n⪼ `.اوامر الفارات` لعـرض بقيـة اوامـر الفـارات\n\n\n**⎉╎قائـمه اوامر تغييـر كليشـة الايـدي :** \n\n⪼ `.اضف فار ايموجي الايدي` بالـرد ع الرمـز او الايموجـي\n\n⪼ `.اضف فار عنوان الايدي` بالـرد ع نـص العنـوان\n\n⪼ `.اضف فار خط الايدي` بالـرد ع الخـط او المستقيـم\n\n⪼ `.اضف كليشة الايدي` بالـرد ع الكليشـه مـن القنـاة @zziddd \n\n\n**⎉╎قائـمه اوامر تغييـر بقيـة الفـارات بأمـر واحـد فقـط :** \n\n⪼ `.اضف فار كليشة الحماية` بالـرد ع الكليشـة\n⪼ قنـاة كلايـش حمايـة الخـاص @zzkrr\n\n⪼ `.اضف فار كليشة الفحص` بالـرد ع الكليشـة\n⪼ قنـاة كلايـش الفحـص @zzclll\n\n⪼ `.اضف فار كليشة الحظر` بالـرد ع الكليشـة\n\n⪼ `.اضف فار كليشة البوت` بالـرد ع الكليشـة لـ اضـافة كليشـة ستـارت\n\n⪼ `.اضف فار رمز الوقتي` بالـرد ع رمـز\n\n⪼ `.اضف فار زخرفة الوقتي` بالـرد ع ارقـام الزغـرفه\n\n⪼ `.اضف فار البايو الوقتي` بالـرد ع البـايـو\n\n⪼ `.اضف فار اسم المستخدم` بالـرد ع اسـم\n\n⪼ `.اضف فار كروب الرسائل` بالـرد ع ايدي الكـروب\n\n⪼ `.اضف فار كروب السجل` بالـرد ع ايدي الكـروب\n\n⪼ `.اضف فار ايديي` بالـرد ع ايدي حسـابك\n\n⪼ `.اضف فار نقطة الاوامر` بالـرد ع الـرمز الجديـد\n\n⪼ `.اضف فار نوم الترحيب` بالـرد ع رقـم الساعة لبداية نوم الترحيب المؤقت\n\n⪼ `.اضف فار رسائل الحماية` بالـرد ع رقـم لعدد رسائل تحذيـرات حماية الخاص\n\n\n⪼ `.جلب فار` + اسـم الفـار\n\n⪼ `.حذف فار` + اسـم الفـار\n\n⪼ `.رفع مطور` بالـرد ع الشخـص لرفعـه مطـور تحكـم كامـل بالاوامـر\n\n⪼ `.حذف فار المطورين`\n\n**⎉╎قائـمه اوامر تغييـر المنطقـة الزمنيـة للوقـت 🌐:** \n\n⪼ `.وقت العراق` \n\n⪼ `.وقت مصر` \n\n⪼ `.وقت الامارات` \n\n⪼ `.وقت ايران` \n\n⪼ `.وقت الجزائر` \n\n⪼ `.وقت المغرب` \n\n⪼ `.وقت تركيا` "
     zilzal = [[Button.inline("رجــوع", data="Obaida")]]
     await zedub.edit(text, buttons=zilzal, link_preview=False)
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"ahmed9")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida9")))
 @check_owner
 async def zed_handler(zedub):
     text = "[ᯓ 𝗠𝗶𝗫𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اوامــر الـخدمــات العـامــه 🎡](t.me/mixthon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n⪼ `.مساعده`\n\n⪼ `.اوامر الفارات`\n\n⪼ `.اوامر السوبر`\n\n⪼ `.اوامر النشر`\n\n⪼ `.الترحيب`\n\n⪼ `.الردود`\n\n⪼ `.الاذاعه`\n\n⪼ `.التكرار`\n\n⪼ `.المساعد`\n\n⪼ `.الطقس`\n\n\n 𓆩 [𝗠𝗶𝗫𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁](t.me/mixthon) 𓆪"
