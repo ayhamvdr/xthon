@@ -34,7 +34,7 @@ async def amireallyalive(event):
     boot_time_timestamp = psutil.boot_time()
     bt = datetime.fromtimestamp(boot_time_timestamp)
     start = datetime.now()
-    zedevent = await edit_or_reply(event, "**⎆┊جـاري .. فحـص البـوت الخـاص بك**")
+    zedevent = await edit_or_reply(event, "**⎆┊جـاري ..@R2RR7 فحـص البـوت الخـاص بك**")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
@@ -45,7 +45,7 @@ async def amireallyalive(event):
     else:
         zedda = f"{bt.year}/{bt.month}/{bt.day}"
     Z_EMOJI = gvarstatus("ALIVE_EMOJI") or "✥┊"
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت  زدثــون 𝗭𝗧𝗵𝗼𝗻  يعمـل .. بنجـاح ☑️ 𓆩 **"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**    يعمـل .. بنجـاح ☑️ 𓆩 **"
     ZED_IMG = gvarstatus("ALIVE_PIC")
     zed_caption = gvarstatus("ALIVE_TEMPLATE") or zed_temp
     caption = zed_caption.format(
