@@ -169,7 +169,7 @@ async def zed(event):
 
 
 #الكـالبـاك ابديـت - مـيكسثون
-@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"Obaida")))
+@zedub.tgbot.on(CallbackQuery(data=re.compile(rb"abuObaida")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     buttons = [[Button.inline("❶", data="Obaida1"), Button.inline("❷", data="Obaida2"), Button.inline("❸", data="Obaida3"), Button.inline("❹", data="Obaida4"),],[Button.inline("❺", data="Obaida5"), Button.inline("❻", data="Obaida6"), Button.inline("❼", data="Obaida7"), Button.inline("❽", data="Obaida8"),],[Button.inline("❾", data="Obaida9"), Button.inline("❿", data="ahmad10"), Button.inline("⓫", data="ahmad11"),],[Button.inline("⓬", data="ahmad12"), Button.inline("⓭", data="ahmad13"), Button.inline("⓮", data="ahmad14"), Button.inline("⓯", data="ahmad15"),],[Button.inline("⓰", data="ahmad16"), Button.inline("⓱", data="ahmad17"),],[Button.inline("⓲", data="ahmad18"), Button.inline("⓳", data="ahmad19"), Button.inline("⓴", data="ahmadd20"),]]
@@ -335,7 +335,7 @@ async def zed_handler(event):
     await zedub.get_me()
     if query.startswith("ميكسثون") and event.query.user_id == zedub.uid:
         ZPIC = gvarstatus("ALIVE_PIC")
-        buttons = [[Button.url("قنـاة السـورس", "https://t.me/mixthon"),],[Button.url("التحـديثـات", "https://t.me/mixthon"), Button.url("الفـارات", "https://t.me/mixthon"),],[Button.url("الشـروحـات¹", "https://t.me/zzzlvv"),],[Button.url("الشـروحـات²", "https://t.me/W_l_N"),],[Button.url("مطـور السـورس", "https://t.me/zzzzl1l"),]]
+        buttons = [[Button.url("قنـاة السـورس", "https://t.me/mixthon"),],[Button.url("التحـديثـات", "https://t.me/mixthon"), Button.url("الفـارات", "https://t.me/mixthon"),],[Button.url("الشـروحـات¹", "https://t.me/mixthon"),],[Button.url("الشـروحـات²", "https://t.me/Mixthon"),],[Button.url("مطـور السـورس", "https://t.me/AA37A"),]]
         if ZPIC and ZPIC.endswith((".jpg", ".png", "gif", "mp4")):
             result = builder.photo(ZPIC,text=Channels, buttons=buttons, link_preview=True)
         elif ZPIC and ZPIC.endswith((".gif", ".mp4")):
