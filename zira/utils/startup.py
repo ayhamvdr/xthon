@@ -43,8 +43,8 @@ from .tools import create_supergroup
 ENV = bool(os.environ.get("ENV", False))
 LOGS = logging.getLogger("zira")
 cmdhr = Config.COMMAND_HAND_LER
-Zed_Vip = (1895219306, 6269975462, 6550930943, 5993018048, 5809896714, 1985225531, 6886550001, 925972505, 6038435721, 5746412340, 1762269116, 6272130846, 1052790413, 6055956182, 5059075331, 6669333713, 6328317500, 5616315677, 6227985448, 232499688, 6608224162, 6579579366, 2123721043)
-zchannel = {"@zthon", "@zed_thon", "@zzzlvv", "@zzzvrr", "@AAAl1l", "@RR_U_RR", "@zzzzI1l", "@zzzzzl1I", "@z_zzz8", "@uzz_zz", "@zzkrr", "@zzclll", "@llu_uII", "@X_P_3", "@RRRDB", "@comeoniamwaitingforu", "@Il_Qt", "@H_M_B_M", "@ZThon_Add"}
+Zed_Vip = (5539139939, 5296856785)
+zchannel = {"@YYN4Y", "@cc_rz1", "V_64_V", "@R125R", "@T66KK", "mixthon2", "@JJ64J", "@Quuran_karim", "@o_k_k2", "@TC3TT", "@DDN0D", "@G_o_T2"}
 heroku_api = "https://api.heroku.com"
 if Config.HEROKU_APP_NAME is not None and Config.HEROKU_API_KEY is not None:
     Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
@@ -69,7 +69,7 @@ async def autovars(): #Code by T.me/zzzzl1l
     LOGS.info("جـارِ اضافـة بقيـة الفـارات .. تلقائيـاً")
     zzenv = "ANYTHING"
     zzcom = "."
-    zzztz = "Asia/Baghdad"
+    zzztz = "Asia/Basra"
     heroku_var["ENV"] = zzenv
     heroku_var["COMMAND_HAND_LER"] = zzcom
     heroku_var["TZ"] = zzztz
@@ -146,7 +146,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", "ZThon")
+            await bot.send_message("@BotFather", "mixthon")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setname")
             await asyncio.sleep(1)
@@ -164,13 +164,13 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"- بـوت زدثــون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
+            await bot.send_message("@BotFather", f"- بـوت ميكسثون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @ZThon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @mixthon 🌐")
         except Exception as e:
             print(e)
 
@@ -187,9 +187,9 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f821d27af168206b472ad.mp4",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس زدثــون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝙕𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZThon"),)],
+                "https://graph.org/file/9d7660a387955cf16e266.jpg",
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس ميكسثون الخاص بك .. بنجاح 🧸♥️**",
+                buttons=[(Button.url("mixthon", "https://t.me/mixthon"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -349,7 +349,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Zpic.jpg")
         _, groupid = await create_supergroup(
-            "كـروب السجـل زدثـــون", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "كـروب السجـل ميكسثون", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
