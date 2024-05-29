@@ -69,7 +69,7 @@ async def autovars(): #Code by T.me/zzzzl1l
     LOGS.info("جـارِ اضافـة بقيـة الفـارات .. تلقائيـاً")
     zzenv = "ANYTHING"
     zzcom = "."
-    zzztz = "Asia/Basra"
+    zzztz = "Asia/Baghdad"
     heroku_var["ENV"] = zzenv
     heroku_var["COMMAND_HAND_LER"] = zzcom
     heroku_var["TZ"] = zzztz
